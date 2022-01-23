@@ -9,3 +9,17 @@ export const Container = styled.div`
     padding: 0 30px;
     justify-content: space-between;
 `;
+
+export const DivImg = styled.div`
+    @media (max-width: 688px){
+        box-sizing: border-box; 
+        overflow-y: auto;
+    }
+`
+export const Img = styled.img`
+    @media (max-width: 688px){
+        width: 30%;
+        display: flex;
+        align-items: stretch;
+    }
+`

@@ -3,7 +3,7 @@ import Switch from 'react-switch'
 import { ThemeContext } from 'styled-components';
 import {shade} from 'polished'
 
-import { Container } from './styles';
+import { Container, DivImg, Img } from './styles';
 
 import IllustrationSvg from'../../assets/logotipo.svg'
 import Name from'../../assets/CowalaSoftware.svg'
@@ -16,10 +16,10 @@ const Header:React.FC<Props> = ({toggleThemes}) => {
   const { colors, title } = useContext(ThemeContext)
   return (
     <Container>
-      <div>
-        <img src={IllustrationSvg} alt="Logo"/>
-        <img src={Name} alt="" />
-      </div>
+      <DivImg>
+        <Img src={IllustrationSvg} alt="Logo"/>
+        <Img src={Name} alt="" />
+      </DivImg>
 
       <Switch
         onChange={toggleThemes}

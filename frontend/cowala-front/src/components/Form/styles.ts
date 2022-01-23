@@ -40,21 +40,26 @@ export const Forms = styled.form`
     position: relative;
 
 
-    @media(max-width:597px ){
+    @media(max-width:688px ){
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
         grid-template-areas: 
         "LabNome"
         "Nome"
         "LabPro"
         "Pro"
+        "LabPhon"
+        "Phon"
         "LabMyip"
-        "Myip";
+        "Myip"
+        "Mybutton";
+
+        align-items: center;
     }
 `;
 
 //labels
 export const LabNome = styled.label`
-    position: relative;
     grid-area: LabNome;
 	margin-bottom: 0.2em;
 `;
@@ -71,7 +76,8 @@ export const LabPhon = styled.label`
 
 export const LabMyip = styled.label`
     grid-area: LabMyip;
-    margin-bottom: 0.2em;   
+    margin-bottom: 0.2em; 
+
 `;
 
 //inputs
@@ -80,10 +86,9 @@ export const InputMax = styled.input`
 	padding: 0.5em;
 	border: none;
 	border-radius: 3px;
-	width: 52vh;
+	width: 100%;
     height: 44px;
 	margin-bottom: 0.5em;
-
 `;
 
 export const InputPro = styled.input`
@@ -115,6 +120,7 @@ export const InputMyIp = styled.input`
 	width: 25vh;
     height: 44px;
 	margin-bottom: 0.5em;
+    font-size: 10px ;
 `;
 
 
@@ -134,9 +140,10 @@ export const Button = styled.button`
     :hover{
         opacity: 16%;
         transition: 0.4s;
-        transform: translateY(1vh);
-
+        transform: translateX(0.5vh);
     }
+
+
 `;
 
 export const ButtonFinish = styled.button`
@@ -156,6 +163,13 @@ export const ButtonFinish = styled.button`
         transition: 0.4s;
         transform: translateY(1vh);
 
+    }
+    @media (max-width: 567px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
     }
 `;
 

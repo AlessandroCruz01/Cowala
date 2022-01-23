@@ -36,6 +36,7 @@ const Form:React.FC = () => {
   const save = useCallback(async (data: Props) => {
     await localStorage.setItem('data', JSON.stringify(data))
     alert('Save')
+    clear()
   }, [])
 
   const phoneMask = (v: string) => {
