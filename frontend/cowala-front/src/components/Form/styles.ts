@@ -19,6 +19,8 @@ export const Container = styled.div`
     
     padding-top: 4%;
     padding-bottom: 4%;
+    box-sizing: border-box; 
+    overflow-y: auto
 `;
 
 //div do form
@@ -36,10 +38,22 @@ export const Forms = styled.form`
     ;
     gap:10px;
     position: relative;
+
+    @media(max-width:597px ){
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "LabNome"
+        "Nome"
+        "LabPro"
+        "Pro"
+        "LabMyip"
+        "Myip";
+    }
 `;
 
 //labels
 export const LabNome = styled.label`
+    position: relative;
     grid-area: LabNome;
 	margin-bottom: 0.2em;
 `;
