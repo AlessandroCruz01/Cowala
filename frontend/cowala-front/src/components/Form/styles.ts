@@ -20,7 +20,7 @@ export const Container = styled.div`
     padding-top: 4%;
     padding-bottom: 4%;
     box-sizing: border-box; 
-    overflow-y: auto
+    overflow-y: auto;
 `;
 
 //div do form
@@ -38,6 +38,7 @@ export const Forms = styled.form`
     ;
     gap:10px;
     position: relative;
+
 
     @media(max-width:597px ){
         grid-template-columns: 1fr;
@@ -82,6 +83,7 @@ export const InputMax = styled.input`
 	width: 52vh;
     height: 44px;
 	margin-bottom: 0.5em;
+
 `;
 
 export const InputPro = styled.input`
@@ -127,7 +129,14 @@ export const Button = styled.button`
 	border-radius: 3px;
 	width: 25vh;
     height: 44px;
-	margin-bottom: 0.5em
+	margin-bottom: 0.5em;
+    cursor: pointer;
+    :hover{
+        opacity: 16%;
+        transition: 0.4s;
+        transform: translateY(1vh);
+
+    }
 `;
 
 export const ButtonFinish = styled.button`
@@ -141,6 +150,13 @@ export const ButtonFinish = styled.button`
 	width: 100px;
     height: 44px;
     margin: 20px;
+    cursor: pointer;
+    :hover{
+        opacity: 16%;
+        transition: 0.4s;
+        transform: translateY(1vh);
+
+    }
 `;
 
 
