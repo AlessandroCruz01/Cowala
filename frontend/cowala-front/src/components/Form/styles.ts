@@ -120,7 +120,9 @@ export const InputMyIp = styled.input`
 	width: 25vh;
     height: 44px;
 	margin-bottom: 0.5em;
-    font-size: 10px ;
+    font-size: 10.4px ;
+    text-align: center;
+    color: ${props => props.theme.colors.text};
 `;
 
 
